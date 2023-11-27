@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.transform {
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 100px;
+}
+
+.transform div {
+    background-color: green;
+    color: white;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s 1s ease-in-out;
+}
+
+div:nth-child(1):hover {
+    transform: translate(20px, 20px);
+}
+
+div:nth-of-type(2):hover {
+    transform: translateX(-20px);
+}
+
+div:nth-of-type(3):hover {
+    transform: translateY(20px);
+}
+
+div:nth-of-type(4):hover {
+    transform: rotate(60deg);
+}
+
+div:nth-of-type(5):hover {
+    transform: scaleY(1.7);
+}
+
+div:nth-of-type(6):hover {
+    transform: skew(30deg);
+}

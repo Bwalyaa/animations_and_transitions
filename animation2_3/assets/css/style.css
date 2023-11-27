@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+img {
+    width: 400px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s ease-in-out;
+    margin-top: 15rem;
+}
+
+img:hover {
+    filter: brightness(1.2); 
+    animation: glow 5s infinite; 
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 0px #00ff00; 
+    }
+    25% {
+        box-shadow: 0 0 20px 5px #ff0000; 
+    }
+    50% {
+        box-shadow: 0 0 30px 10px #0000ff; 
+    }
+    75% {
+        box-shadow: 0 0 20px 5px white; 
+    }
+    100% {
+        box-shadow: 0 0 10px 0px #00ff00; 
+    }
+}
