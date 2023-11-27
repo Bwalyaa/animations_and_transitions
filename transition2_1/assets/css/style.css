@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.transition {
+    position: relative;
+    text-align: center;
+}
+
+img {
+    width: 400px; /* Ändere die Breite nach Bedarf */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: filter 0.3s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dunklerer Hintergrund beim Rüberhovern */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.text {
+    color: #fff; /* Textfarbe */
+    font-size: 18px; /* Schriftgröße */
+    font-weight: bold; /* Schriftgewicht */
+}
+
+.transition:hover .overlay {
+    opacity: 1; /* Overlay einblenden beim Rüberhovern */
+}

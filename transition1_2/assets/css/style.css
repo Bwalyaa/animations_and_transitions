@@ -1,0 +1,36 @@
+.transitions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height:7rem;
+    width: 100%;
+    background-color: grey;
+    position: relative;
+}
+
+.redBox {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    transition: left 3s ease-in-out;
+}
+
+.greenBox {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    transition: left 3.5s ease-in-out;
+}
+
+.transitions:hover .redBox {
+    left: 100%;
+}
+
+.transitions:hover .greenBox {
+    left: 100%; 
+}
